@@ -1,7 +1,3 @@
-let rowData = document.getElementById("rowData");
-let searchContainer = document.getElementById("searchContainer");
-let submitBtn;
-
 $(function(){
     searchByName("").then(() => {
         $(".loading").fadeOut(300)
@@ -50,6 +46,10 @@ $(".side-menu i.open-close-icon").on('click' , function (){
         openSide()
     }
 }) 
+
+let rowData = document.getElementById("rowData");
+let searchContainer = document.getElementById("searchContainer");
+let submitBtn;
 
 function displayMeals(arr) {
     let cartoona = "";
